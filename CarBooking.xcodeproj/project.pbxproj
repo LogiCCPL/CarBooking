@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E121039927F7886100B88DE6 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039827F7886100B88DE6 /* DeveloperPreview.swift */; };
+		E121039B27F7890F00B88DE6 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039A27F7890F00B88DE6 /* Car.swift */; };
 		E1EA6D9F27F7527C005E0E99 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */; };
 		E1EA6DA127F7527C005E0E99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6DA027F7527C005E0E99 /* ContentView.swift */; };
 		E1EA6DA327F7527F005E0E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EA6DA227F7527F005E0E99 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E121039827F7886100B88DE6 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		E121039A27F7890F00B88DE6 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		E1EA6D9B27F7527C005E0E99 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		E1EA6DA027F7527C005E0E99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 		E121039527F7542B00B88DE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E121039827F7886100B88DE6 /* DeveloperPreview.swift */,
+				E121039A27F7890F00B88DE6 /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			files = (
 				E1EA6DA127F7527C005E0E99 /* ContentView.swift in Sources */,
 				E1EA6D9F27F7527C005E0E99 /* CarBookingApp.swift in Sources */,
+				E121039B27F7890F00B88DE6 /* Car.swift in Sources */,
+				E121039927F7886100B88DE6 /* DeveloperPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
