@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E121039927F7886100B88DE6 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039827F7886100B88DE6 /* DeveloperPreview.swift */; };
 		E121039B27F7890F00B88DE6 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039A27F7890F00B88DE6 /* Car.swift */; };
+		E121039D27F7903100B88DE6 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039C27F7903100B88DE6 /* CarList.swift */; };
+		E121039F27F7904300B88DE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121039E27F7904300B88DE6 /* Home.swift */; };
+		E12103A227F7932D00B88DE6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103A127F7932D00B88DE6 /* Color.swift */; };
+		E12103A527F844CA00B88DE6 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103A427F844CA00B88DE6 /* CarViewModel.swift */; };
 		E1EA6D9F27F7527C005E0E99 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */; };
 		E1EA6DA127F7527C005E0E99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6DA027F7527C005E0E99 /* ContentView.swift */; };
 		E1EA6DA327F7527F005E0E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EA6DA227F7527F005E0E99 /* Assets.xcassets */; };
@@ -18,6 +22,11 @@
 /* Begin PBXFileReference section */
 		E121039827F7886100B88DE6 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		E121039A27F7890F00B88DE6 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E121039C27F7903100B88DE6 /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
+		E121039E27F7904300B88DE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E12103A127F7932D00B88DE6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E12103A327F841C500B88DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E12103A427F844CA00B88DE6 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		E1EA6D9B27F7527C005E0E99 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		E1EA6DA027F7527C005E0E99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +57,7 @@
 		E121039627F7545600B88DE6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E12103A427F844CA00B88DE6 /* CarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -55,8 +65,18 @@
 		E121039727F7545E00B88DE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E121039C27F7903100B88DE6 /* CarList.swift */,
+				E121039E27F7904300B88DE6 /* Home.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E12103A027F7931F00B88DE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E12103A127F7932D00B88DE6 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E1EA6D9227F7527C005E0E99 = {
@@ -78,6 +98,8 @@
 		E1EA6D9D27F7527C005E0E99 /* CarBooking */ = {
 			isa = PBXGroup;
 			children = (
+				E12103A327F841C500B88DE6 /* Info.plist */,
+				E12103A027F7931F00B88DE6 /* Extensions */,
 				E121039727F7545E00B88DE6 /* View */,
 				E121039627F7545600B88DE6 /* ViewModel */,
 				E121039527F7542B00B88DE6 /* Model */,
@@ -167,10 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E121039D27F7903100B88DE6 /* CarList.swift in Sources */,
 				E1EA6DA127F7527C005E0E99 /* ContentView.swift in Sources */,
+				E12103A227F7932D00B88DE6 /* Color.swift in Sources */,
 				E1EA6D9F27F7527C005E0E99 /* CarBookingApp.swift in Sources */,
 				E121039B27F7890F00B88DE6 /* Car.swift in Sources */,
+				E121039F27F7904300B88DE6 /* Home.swift in Sources */,
 				E121039927F7886100B88DE6 /* DeveloperPreview.swift in Sources */,
+				E12103A527F844CA00B88DE6 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +330,7 @@
 				DEVELOPMENT_TEAM = 38Q6TG2KG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarBooking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,6 +360,7 @@
 				DEVELOPMENT_TEAM = 38Q6TG2KG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarBooking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

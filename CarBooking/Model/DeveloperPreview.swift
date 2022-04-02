@@ -10,6 +10,8 @@ import Foundation
 class DeveloperPreview {
     static let instance = DeveloperPreview()
     
+    let viewModel = CarViewModel()
+    
     let car = Car(id: 1, name: "intive_Kupferwerk 1", shortDescription: "Limousine with 5 Seats")
     
     let carList: [Car] = [
