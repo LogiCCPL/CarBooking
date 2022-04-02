@@ -10,7 +10,7 @@ import Foundation
 class CarViewModel: ObservableObject {
     
     @Published var cars: [Car] = []
-    
+    @Published var showDetail = false
     
     func fetchCars() {
         guard let url = URL(string: "http://job-applicants-dummy-api.kupferwerk.net.s3.amazonaws.com/api/cars.json") else {
@@ -26,6 +26,9 @@ class CarViewModel: ObservableObject {
                 let cars = try JSONDecoder().decode([Car].self, from: data)
                 DispatchQueue.main.async {
                     self?.cars = cars
+                    self?.cars.sort {
+                        $0.name.uppercased() < $1.name.uppercased()
+                    }
                 }
             }
             catch {

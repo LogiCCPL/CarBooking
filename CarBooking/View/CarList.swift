@@ -10,20 +10,19 @@ import SwiftUI
 struct CarList: View {
     @EnvironmentObject var viewModel: CarViewModel
     var body: some View {
-        List{
+        ScrollView(showsIndicators: false){
+            Spacer(minLength: 20)
             ForEach(viewModel.cars, id: \.self) { car in
-                VStack{
-                    Text("\(car.name)")
-                        .bold()
-                        .foregroundColor(Color.theme.accent)
-                    Text("\(car.shortDescription ?? "")")
-                        .foregroundColor(Color.theme.secondary)
-                }
+                CarListRow(car: car, showDetail: $viewModel.showDetail)
             }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
         }
-        .listStyle(PlainListStyle())
         .onAppear {
             viewModel.fetchCars()
+        }
+        .sheet(isPresented: $viewModel.showDetail) {
+            Text("HEJ")
         }
     }
 }
