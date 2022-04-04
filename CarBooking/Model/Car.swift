@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Car: Codable, Hashable{
+struct Car: Codable, Hashable, Identifiable{
     var id: Int
     var name: String
     var shortDescription: String?

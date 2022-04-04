@@ -10,7 +10,6 @@ import SwiftUI
 struct CarListRow: View {
     
     let car: Car
-    @Binding var showDetail: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
@@ -43,14 +42,12 @@ struct CarListRow: View {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.white)
                 .shadow(color: .black.opacity(0.3), radius: 5, x: 3, y: 5))
-        .onTapGesture {
-            showDetail.toggle()
-        }
+        
     }
 }
 
 struct CarListRow_Previews: PreviewProvider {
     static var previews: some View {
-        CarListRow(car: DeveloperPreview.instance.car, showDetail: .constant(false))
+        CarListRow(car: DeveloperPreview.instance.car)
     }
 }

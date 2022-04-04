@@ -12,6 +12,7 @@ class CarViewModel: ObservableObject {
     @Published var cars: [Car] = []
     @Published var carDetail: CarDetail?
     @Published var showDetail = false
+    @Published var idSelected: Int?
     
     // Booking Car
     @Published var startDate = Date()
@@ -44,7 +45,8 @@ class CarViewModel: ObservableObject {
         task.resume()
     }
     
-    func fetchCarDetail(id: String) {
+    func fetchCarDetail() {
+        guard let id = idSelected else { return }
         guard let url = URL(string: "http://job-applicants-dummy-api.kupferwerk.net.s3.amazonaws.com/api/cars/\(id).json") else {
             return
         }

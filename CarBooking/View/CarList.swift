@@ -12,8 +12,12 @@ struct CarList: View {
     var body: some View {
         ScrollView(showsIndicators: false){
             Spacer(minLength: 20)
-            ForEach(viewModel.cars, id: \.self) { car in
-                CarListRow(car: car, showDetail: $viewModel.showDetail)
+            ForEach(viewModel.cars) { car in
+                CarListRow(car: car)
+                    .onTapGesture {
+                        viewModel.idSelected = car.id
+                        viewModel.showDetail.toggle()
+                    }
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
@@ -22,8 +26,9 @@ struct CarList: View {
             viewModel.fetchCars()
         }
         .sheet(isPresented: $viewModel.showDetail) {
-            CarDetailView(carDetail: DeveloperPreview.instance.carDetail)
+            CarDetailView()
         }
+        
     }
 }
 
