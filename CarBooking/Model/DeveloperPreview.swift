@@ -26,7 +26,7 @@ class DeveloperPreview {
         name: "intive_Kupferwerk",
         shortDescription: "Limousine with 5 Seats",
         description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        image: "images/automotive.jpg")
+        image: "http://job-applicants-dummy-api.kupferwerk.net.s3.amazonaws.com/api/images/automotive.jpg")
 }
 
 /*

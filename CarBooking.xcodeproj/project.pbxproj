@@ -14,6 +14,7 @@
 		E12103A227F7932D00B88DE6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103A127F7932D00B88DE6 /* Color.swift */; };
 		E12103A527F844CA00B88DE6 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103A427F844CA00B88DE6 /* CarViewModel.swift */; };
 		E12103A727F8500700B88DE6 /* CarListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103A627F8500700B88DE6 /* CarListRow.swift */; };
+		E12103AB27F86BBA00B88DE6 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12103AA27F86BBA00B88DE6 /* CarDetailView.swift */; };
 		E1EA6D9F27F7527C005E0E99 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */; };
 		E1EA6DA127F7527C005E0E99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA6DA027F7527C005E0E99 /* ContentView.swift */; };
 		E1EA6DA327F7527F005E0E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EA6DA227F7527F005E0E99 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		E12103A327F841C500B88DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E12103A427F844CA00B88DE6 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		E12103A627F8500700B88DE6 /* CarListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListRow.swift; sourceTree = "<group>"; };
+		E12103AA27F86BBA00B88DE6 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		E1EA6D9B27F7527C005E0E99 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EA6D9E27F7527C005E0E99 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		E1EA6DA027F7527C005E0E99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E121039C27F7903100B88DE6 /* CarList.swift */,
 				E12103A627F8500700B88DE6 /* CarListRow.swift */,
 				E121039E27F7904300B88DE6 /* Home.swift */,
+				E12103AA27F86BBA00B88DE6 /* CarDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				E121039B27F7890F00B88DE6 /* Car.swift in Sources */,
 				E121039F27F7904300B88DE6 /* Home.swift in Sources */,
 				E121039927F7886100B88DE6 /* DeveloperPreview.swift in Sources */,
+				E12103AB27F86BBA00B88DE6 /* CarDetailView.swift in Sources */,
 				E12103A527F844CA00B88DE6 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

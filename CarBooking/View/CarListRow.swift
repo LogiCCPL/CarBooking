@@ -38,14 +38,14 @@ struct CarListRow: View {
         }
         .padding(.horizontal)
         .padding(.top)
-        .onTapGesture {
-            showDetail.toggle()
-        }
         .frame(width: UIScreen.main.bounds.width - 30 ,height: 120, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.white)
                 .shadow(color: .black.opacity(0.3), radius: 5, x: 3, y: 5))
+        .onTapGesture {
+            showDetail.toggle()
+        }
     }
 }
 

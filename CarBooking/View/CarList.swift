@@ -22,7 +22,7 @@ struct CarList: View {
             viewModel.fetchCars()
         }
         .sheet(isPresented: $viewModel.showDetail) {
-            Text("HEJ")
+            CarDetailView(carDetail: DeveloperPreview.instance.carDetail)
         }
     }
 }
