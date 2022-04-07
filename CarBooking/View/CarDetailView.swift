@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CarDetailView: View {
+    @Environment(\.managedObjectContext) var moc
     @EnvironmentObject var viewModel: CarViewModel
     let url = "http://job-applicants-dummy-api.kupferwerk.net.s3.amazonaws.com/api/"
     var body: some View {
@@ -54,7 +55,8 @@ struct CarDetailView: View {
                         HStack{
                             Spacer()
                             Button(action:{
-                                
+                                viewModel.saveCar(moc: moc)
+                                viewModel.showDetail = false
                             }){
                                 Text("Confirm")
                                     .bold()
@@ -86,6 +88,11 @@ struct CarDetailView: View {
 struct CarDetailView_Previews: PreviewProvider {
     static var previews: some View {
         CarDetailView()
+            .onAppear{ // only for preview
+                DeveloperPreview.instance.viewModel.idSelected = 1
+                DeveloperPreview.instance.viewModel.fetchCarDetail()
+                DeveloperPreview.instance.viewModel.setDefaultStartDate()
+            }
             .environmentObject(DeveloperPreview.instance.viewModel)
     }
 }

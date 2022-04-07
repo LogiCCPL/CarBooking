@@ -4,7 +4,7 @@
 //
 //  Created by Robert Adamczyk on 02.04.22.
 //
-
+import CoreData
 import Foundation
 
 class CarViewModel: ObservableObject {
@@ -72,6 +72,17 @@ class CarViewModel: ObservableObject {
     func setDefaultStartDate(){
         startDate = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: startDate) ?? Date()
         startDate = Calendar.current.date(byAdding: .day, value: 1, to: startDate) ?? Date()
+    }
+    
+    func saveCar(moc: NSManagedObjectContext) {
+        guard let carDetail = carDetail else { return }
+        let car = CarCD(context: moc)
+        car.id = Int16(carDetail.id)
+        car.name = carDetail.name
+        car.start = startDate
+        car.end = endDate
+        
+        try? moc.save()
     }
     
 }

@@ -9,16 +9,31 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var viewModel = CarViewModel()
+    @StateObject private var dataController = DataController()
     var body: some View {
-        NavigationView{
-            CarList()
-            
-            
-            
-            
-            .navigationTitle("Car Booking")
+        TabView{
+            NavigationView{
+                CarList()
+                
+                    .navigationTitle("Available Cars")
+            }
+            .tabItem {
+                Image(systemName: "car.fill")
+                Text("Available Cars")
+            }
+            NavigationView{
+                Text("test")
+                
+                    .navigationTitle("Recently Booked")
+            }
+            .tabItem {
+                Image(systemName: "book.fill")
+                Text("Recently Booked")
+            }
         }
+        
         .environmentObject(viewModel)
+        .environment(\.managedObjectContext, dataController.container.viewContext)
     }
 }
 
